@@ -1,0 +1,108 @@
+@mixin fonts ($font, $type, $size) {
+	font-family: $font, $type;
+	font-size: $size;
+}
+@import "nav.scss";
+$color: rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5);
+$colorCaja: rgba(135, 132, 141, 0.5);
+@import "banner.scss";
+@import "footer.scss";
+
+
+.centerImage {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include fonts ('Cormorant Garamond', serif, 2rem);
+ 	&__zoom {
+ 		transition: transform .2s;
+ 		&:hover {
+ 			transform: scale(1.2);
+ 		}
+ 	}
+ }
+
+ .table {
+ 	@include fonts ('Cormorant Garamond', serif, 1rem);
+ }
+
+ .Lato {
+ 	@include fonts ('Lato', serif, 1rem);
+	text-decoration: none;
+	line-height: 20px;
+	letter-spacing: 0,5px;
+}
+
+.Cormorant {
+	margin: 10px;
+	color: #707070;
+	font-weight: 100;
+	font-size: 1,5rem;
+	font-family: 'Cormorant Garamond', serif;
+	line-height: 20px;
+	letter-spacing: 1px;
+	text-transform: none;
+}
+
+ .cards {
+    img {
+    	box-shadow: 3px 3px 8px 0px rgba(1,0,1,0.3); 
+    }	
+    &__imagenthumb {
+	    margin-top: 15px;
+	  	margin-bottom: 15px;
+	    position: relative;
+	   	opacity: 1;
+	   	&:hover &__overlay {
+			opacity: 1;
+	   	}
+		&__overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			opacity: 0;
+			transition: .5s ease;
+			 background-color: rgba(1,0,1,0.3);
+	   		&__text {
+	   		  color: white;
+			  font-size: 20px;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  -webkit-transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			  text-align: center;
+
+			}
+		}	
+	}
+}
+
+.carousel-item {
+	overflow: hidden;
+	position:relative;
+    height:500px;
+}
+
+.carousel-caption {
+    background: rgba(101, 97, 97, 0.5);
+}
+
+.item img {
+width: 100%;
+height: 100% !important;
+object-fit: cover;
+
+}
+
+.containerContact { 
+	background-image: url(../scss/assets/img/indeximg2.jpg);
+	padding: 40px;
+	color: #b1b1b1;
+	border-top: #333 7px solid;
+ }

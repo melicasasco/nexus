@@ -1,0 +1,31 @@
+.footer { 
+	text-align: justify;
+	text-transform: none;
+	list-style-type: none;
+	line-height: 20px;
+	text-decoration: none;
+	word-spacing: 5px;
+	list-style-position: inside;
+	background-color: #f3f3f3;
+	font-family: 'Cormorant Garamond', serif;
+	margin-top: 100px; 
+	&__flexHorizontal { 
+		display: flex;
+		flex-direction: row;
+		&__flexVertical {
+			display: flex;
+			margin-left: 20px;
+			flex-direction: column;
+			&__titulo {
+				justify-content: flex-start;
+				@include fonts('Cormorant Garamond', serif, 20px);
+				text-decoration: underline;
+				line-height: 40px;
+				letter-spacing: 1px;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+	
+
