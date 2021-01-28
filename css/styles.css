@@ -1,3 +1,6 @@
+header {
+  height: 70px; }
+
 .centerImage {
   display: flex;
   flex-direction: column;
@@ -31,17 +34,18 @@
   line-height: 20px;
   letter-spacing: 0,5px; }
 
-.Cormorant, .CormorantTitle {
+.Cormorant, .Cormorant_Title {
   margin: 10px;
   color: #707070;
   font-weight: 100;
   font-family: "Cormorant", serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 20px;
   letter-spacing: 1px;
   text-transform: none; }
-  .CormorantTitle {
-    color: black; }
+  .Cormorant_Title {
+    color: black;
+    font-size: 2rem; }
 
 .cards img {
   box-shadow: 3px 3px 8px 0px rgba(1, 0, 1, 0.3); }
@@ -75,8 +79,7 @@
 
 .carousel-item {
   overflow: hidden;
-  position: relative;
-  height: 32em; }
+  position: relative; }
 
 .carousel-caption {
   background: rgba(101, 97, 97, 0.5); }

@@ -6,6 +6,10 @@ $color: rgba(0, 0, 0, 0.5),
 		rgba(0, 0, 0, 0.5);
 $colorCaja: rgba(135, 132, 141, 0.5);
 
+header {
+    height: 70px;
+}
+
 .centerImage {
 	display: flex;
 	flex-direction: column;
@@ -48,13 +52,14 @@ $colorCaja: rgba(135, 132, 141, 0.5);
 	margin: 10px;
 	color: #707070;
 	font-weight: 100;
-	@include fonts ('Cormorant', serif, 1.5rem);
+	@include fonts ('Cormorant', serif, 1rem);
 	line-height: 20px;
 	letter-spacing: 1px;
 	text-transform: none;
-	&Title {
+	&_Title {
 		@extend .Cormorant;
 		color: black;
+		font-size: 2rem;
 	}
 }
 
@@ -100,7 +105,7 @@ $colorCaja: rgba(135, 132, 141, 0.5);
     &-item { 
 	    overflow: hidden;
 		position:relative;
-	    height:32em;
+
     }
     &-caption {
     	background: rgba(101, 97, 97, 0.5);
