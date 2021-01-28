@@ -2,13 +2,9 @@
 	font-family: $font, $type;
 	font-size: $size;
 }
-@import "nav.scss";
 $color: rgba(0, 0, 0, 0.5),
 		rgba(0, 0, 0, 0.5);
 $colorCaja: rgba(135, 132, 141, 0.5);
-@import "banner.scss";
-@import "footer.scss";
-
 
 .centerImage {
 	display: flex;
@@ -52,24 +48,16 @@ $colorCaja: rgba(135, 132, 141, 0.5);
 	margin: 10px;
 	color: #707070;
 	font-weight: 100;
-	font-size: 1,5rem;
-	font-family: 'Cormorant Garamond', serif;
+	@include fonts ('Cormorant', serif, 1.5rem);
 	line-height: 20px;
 	letter-spacing: 1px;
 	text-transform: none;
+	&Title {
+		@extend .Cormorant;
+		color: black;
+	}
 }
 
-.CormorantTitle {
-	margin: 10px;
-	color: #707070;
-	font-weight: 100;
-	font-size: 1,5rem;
-	font-family: 'Cormorant Garamond', serif;
-	color: black;
-	line-height: 20px;
-	letter-spacing: 1px;
-	text-transform: none;
-}
 
  .cards {
     img {
@@ -108,15 +96,17 @@ $colorCaja: rgba(135, 132, 141, 0.5);
 	}
 }
 
-.carousel-item {
-	overflow: hidden;
-	position:relative;
-    height:32em;
-}
+.carousel {
+    &-item { 
+	    overflow: hidden;
+		position:relative;
+	    height:32em;
+    }
+    &-caption {
+    	background: rgba(101, 97, 97, 0.5);
+    }
+}    
 
-.carousel-caption {
-    background: rgba(101, 97, 97, 0.5);
-}
 
 .item img {
 width: 100%;
@@ -135,3 +125,18 @@ object-fit: cover;
       color: inherit;
  }
 
+.btn {
+	border: none;
+	@include fonts ('Lato', serif, 1rem);
+	color: black;
+	&:hover{
+		background-color: black;
+	}
+	&-primary {
+		background-color: white;
+		border: solid;
+		&:hover {
+			border: none;
+		}
+	}
+}
