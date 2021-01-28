@@ -128,7 +128,17 @@ header {
 .Lato {
   font-family: "Lato", serif;
   font-size: 1rem;
-  text-decoration: none;
+  text-decoration: none !important;
+  line-height: 20px;
+  letter-spacing: 0,5px; }
+  .Lato__footer {
+    color: white; }
+
+.LatoTitle {
+  font-family: "Lato", serif;
+  font-size: 1.5rem;
+  text-decoration: initial;
+  font-weight: semibold;
   line-height: 20px;
   letter-spacing: 0,5px; }
 
@@ -185,8 +195,16 @@ header {
   height: 100% !important;
   object-fit: cover; }
 
-.containerContact {
-  background-image: url(../scss/assets/img/indeximg2.jpg);
-  padding: 40px;
-  color: #b1b1b1;
-  border-top: #333 7px solid; }
+.dropdown-menu {
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.hover1:hover {
+  color: #aaa !important;
+  text-decoration: underline; }
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit; }
