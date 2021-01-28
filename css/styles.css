@@ -196,7 +196,7 @@ header {
 .carousel-item {
   overflow: hidden;
   position: relative;
-  height: 500px; }
+  height: 32em; }
 
 .carousel-caption {
   background: rgba(101, 97, 97, 0.5); }
@@ -205,12 +205,6 @@ header {
   width: 100%;
   height: 100% !important;
   object-fit: cover; }
-
-.dropdown-menu {
-  border: none;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
 
 .hover1:hover {
   color: #aaa !important;

@@ -111,7 +111,7 @@ $colorCaja: rgba(135, 132, 141, 0.5);
 .carousel-item {
 	overflow: hidden;
 	position:relative;
-    height:500px;
+    height:32em;
 }
 
 .carousel-caption {
@@ -123,13 +123,6 @@ width: 100%;
 height: 100% !important;
 object-fit: cover;
 
-}
-
-.dropdown-menu {
-    border: none;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
 }
 
 .hover1:hover {
