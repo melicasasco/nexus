@@ -6,19 +6,6 @@ $color: rgba(0, 0, 0, 0.5),
 		rgba(0, 0, 0, 0.5);
 $colorCaja: rgba(135, 132, 141, 0.5);
 
-header {
-    height: 70px;
-}
-
-.nav-item {
-	z-index: 9999;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: regular;
-  letter-spacing: 1px;
-  background-color: white !important;
-}
-
 
 .centerImage {
 	display: flex;
@@ -80,6 +67,8 @@ header {
 
  .cards {
     &__imagenthumb {
+    	padding: 0px 0px;
+    	margin: 0px 0px;
 	    margin-top: 15px;
 	  	margin-bottom: 15px;
 	    position: relative;
