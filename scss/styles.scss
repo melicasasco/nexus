@@ -10,9 +10,15 @@ header {
     height: 70px;
 }
 
-.navbar-collapse {
-   background: #fff;
+.nav-item {
+	z-index: 9999;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: regular;
+  letter-spacing: 1px;
+  background-color: white !important;
 }
+
 
 .centerImage {
 	display: flex;
@@ -64,6 +70,7 @@ header {
 		@extend .Cormorant;
 		color: black;
 		font-size: 2rem;
+		line-height: 40px;
 	}
 }
 
@@ -204,4 +211,5 @@ object-fit: cover;
 .mapSection {
 	height: 350px;
 }
+
 

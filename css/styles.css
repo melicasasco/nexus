@@ -1,8 +1,13 @@
 header {
   height: 70px; }
 
-.navbar-collapse {
-  background: #fff; }
+.nav-item {
+  z-index: 9999;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: regular;
+  letter-spacing: 1px;
+  background-color: white !important; }
 
 .centerImage {
   display: flex;
@@ -49,7 +54,8 @@ header {
   text-transform: none; }
   .Cormorant_Title {
     color: black;
-    font-size: 2rem; }
+    font-size: 2rem;
+    line-height: 40px; }
 
 .img-thumbnail {
   border: none; }
