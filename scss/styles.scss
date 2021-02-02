@@ -10,6 +10,10 @@ header {
     height: 70px;
 }
 
+.navbar-collapse {
+   background: #fff;
+}
+
 .centerImage {
 	display: flex;
 	flex-direction: column;
@@ -31,12 +35,12 @@ header {
  .Lato {
  	@include fonts ('Lato', serif, 1rem);
 	text-decoration: none!important;
-	line-height: 20px;
+	text-align: center;
+	line-height: 30px;
 	letter-spacing: 0,5px;
 	&__footer {
 		color: white;
 	}
-
 }
 
 .LatoTitle {
@@ -63,16 +67,15 @@ header {
 	}
 }
 
+.img-thumbnail {
+	border:none;
+}
 
  .cards {
-    img {
-    	box-shadow: 3px 3px 8px 0px rgba(1,0,1,0.3); 
-    }	
     &__imagenthumb {
 	    margin-top: 15px;
 	  	margin-bottom: 15px;
 	    position: relative;
-	   	opacity: 1;
 	   	&:hover &__overlay {
 			opacity: 1;
 	   	}
@@ -84,7 +87,7 @@ header {
 			right: 0;
 			opacity: 0;
 			transition: .5s ease;
-			 background-color: rgba(1,0,1,0.3);
+			background-color: rgba(0,0,0,0.3);
 	   		&__text {
 	   		  color: white;
 			  font-size: 20px;
@@ -120,7 +123,7 @@ object-fit: cover;
 
 }
 
-.hover1:hover {
+.textogris:hover {
     color: #aaa!important;
     text-decoration: underline;
 }
@@ -145,3 +148,60 @@ object-fit: cover;
 		}
 	}
 }
+
+
+.contacto {
+  padding: 0 20% 0 20%;
+  &__margin {
+  	margin-top: 25px;
+  }
+}
+
+.form-group .form-control {
+  -webkit-box-shadow: none;
+  border-bottom: 1px;
+  border-style: solid solid solid solid;
+  border-radius:0; 
+  border-color: #000;
+  &:focus {
+  	box-shadow: none;
+  	border-width: 0 0 2px 0;
+  	border-color: #000;
+  }
+}
+
+.btn-mod.btn-border {
+	border: solid;
+	border-color: black;
+	&:hover {
+		color: #fff;
+    	border-color: #b3b3b3;
+    	background: #000;
+   		outline: none;
+	}
+	&:active{
+		@extend .btn-mod.btn-border:hover;
+		&:focus{
+			@extend .btn-mod.btn-border:hover;
+		}
+	}
+	&:focus{
+		@extend .btn-mod.btn-border:hover;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+    .btn-mod.btn-large {
+       padding: 6px 16px;
+       font-size: 11px;
+    }
+  
+    .form-title {
+        font-size: 20px;
+  }
+}
+
+.mapSection {
+	height: 350px;
+}
+
