@@ -45,6 +45,7 @@ $colorCaja: rgba(135, 132, 141, 0.5);
 
 }
 
+
 .biography {
  	@include fonts ('Lato', serif, 1rem);
 	text-align: justify;
@@ -133,7 +134,7 @@ object-fit: cover;
       color: inherit;
  }
 
-.alonsoimg {
+.artistsimg {
 	margin: auto;
 }
 
