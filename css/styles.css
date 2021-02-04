@@ -32,6 +32,12 @@
   line-height: 20px;
   letter-spacing: 0,5px; }
 
+.biography {
+  font-family: "Lato", serif;
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 33px; }
+
 .Cormorant, .Cormorant_Title {
   margin: 10px;
   color: #707070;
@@ -47,13 +53,11 @@
     line-height: 40px; }
 
 .img-thumbnail {
-  border: none; }
+  border: 0.2; }
 
 .cards__imagenthumb {
   padding: 0px 0px;
   margin: 0px 0px;
-  margin-top: 15px;
-  margin-bottom: 15px;
   position: relative; }
   .cards__imagenthumb:hover .cards__imagenthumb__overlay {
     opacity: 1; }
@@ -65,7 +69,7 @@
     right: 0;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(135, 132, 141, 0.5); }
     .cards__imagenthumb__overlay__text {
       color: white;
       font-size: 20px;
@@ -96,6 +100,18 @@
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit; }
+
+.alonsoimg {
+  margin: auto; }
+
+.carousel-caption {
+  width: 500px;
+  position: absolute;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  margin: 195px; }
 
 .btn {
   border: none;
@@ -143,4 +159,5 @@ a, a:hover, a:focus, a:active {
     font-size: 20px; } }
 
 .mapSection {
-  height: 350px; }
+  height: 350px;
+  outline-width: 200px; }

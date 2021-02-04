@@ -37,12 +37,18 @@ $colorCaja: rgba(135, 132, 141, 0.5);
 }
 
 .LatoTitle {
-	 @include fonts ('Lato', serif, 1.5rem);
+	@include fonts ('Lato', serif, 1.5rem);
 	text-decoration: initial;
 	font-weight: semibold;
 	line-height: 20px;
 	letter-spacing: 0,5px;
 
+}
+
+.biography {
+ 	@include fonts ('Lato', serif, 1rem);
+	text-align: justify;
+	line-height: 33px;
 }
 
 .Cormorant {
@@ -62,15 +68,13 @@ $colorCaja: rgba(135, 132, 141, 0.5);
 }
 
 .img-thumbnail {
-	border:none;
+	border: 0.2;
 }
 
  .cards {
     &__imagenthumb {
     	padding: 0px 0px;
     	margin: 0px 0px;
-	    margin-top: 15px;
-	  	margin-bottom: 15px;
 	    position: relative;
 	   	&:hover &__overlay {
 			opacity: 1;
@@ -83,7 +87,7 @@ $colorCaja: rgba(135, 132, 141, 0.5);
 			right: 0;
 			opacity: 0;
 			transition: .5s ease;
-			background-color: rgba(0,0,0,0.3);
+			background-color: $colorCaja;
 	   		&__text {
 	   		  color: white;
 			  font-size: 20px;
@@ -128,6 +132,21 @@ object-fit: cover;
       text-decoration: none;
       color: inherit;
  }
+
+.alonsoimg {
+	margin: auto;
+}
+
+
+.carousel-caption {
+	width: 500px;
+	position: absolute;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	margin: 195px;
+	}
 
 .btn {
 	border: none;
@@ -199,6 +218,9 @@ object-fit: cover;
 
 .mapSection {
 	height: 350px;
+	outline-width: 200px;
 }
+
+
 
 
