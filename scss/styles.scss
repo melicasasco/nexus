@@ -46,7 +46,7 @@ $colorCaja: rgba(135, 132, 141, 0.5);
 }
 
 
-.biography {
+.justifyText {
  	@include fonts ('Lato', serif, 1rem);
 	text-align: justify;
 	line-height: 33px;
@@ -162,6 +162,11 @@ object-fit: cover;
 		&:hover {
 			border: none;
 		}
+		&:focus {
+			color: #fff;
+    		background: #000;
+   			outline: 0;
+   		}
 	}
 }
 
@@ -191,7 +196,6 @@ object-fit: cover;
 	border-color: black;
 	&:hover {
 		color: #fff;
-    	border-color: #b3b3b3;
     	background: #000;
    		outline: none;
 	}
@@ -222,6 +226,24 @@ object-fit: cover;
 	outline-width: 200px;
 }
 
+.icon__zoom {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 	transition: transform .2s;
+ 	&:hover {
+ 		transform: scale(1.2);
+ 	}
+ }
 
-
-
+.hoverColeccion figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hoverColeccion figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
