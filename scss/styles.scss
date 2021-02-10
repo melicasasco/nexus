@@ -237,6 +237,8 @@ object-fit: cover;
  	}
  }
 
+/*Hover artistas fefitiii*/
+
 .hoverColeccion figure img {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -246,4 +248,15 @@ object-fit: cover;
 .hoverColeccion figure:hover img {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
+}
+
+/*Hover index fefitiii*/
+
+.hoverIndex figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hoverIndex figure:hover img {
+	opacity: .5;
 }
